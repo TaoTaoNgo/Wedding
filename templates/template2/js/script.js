@@ -44,7 +44,7 @@
                 //console.log(data.values[i][1]);
                 $('.wish-box').prepend('<div class="wish-box-item bg"><strong>'+data.values[i][1].replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;")+'</strong><p>'+data.values[i][2].replace(/&/g, "&amp;").replace(/>/g, "&gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;")+'</p></div>');
             }
-            $( "#success").html(data.values.length).slideDown( "slow" );
+            $( "#success").html("Cảm ơn bạn rất nhiều!!!").slideDown( "slow" );
             setTimeout(function() {
             $( "#success").slideUp( "slow" );
             }, 5000);
