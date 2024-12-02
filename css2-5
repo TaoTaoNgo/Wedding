@@ -1,0 +1,21 @@
+﻿@font-face {
+  font-family: 'Bellota Text';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/bellotatext/v18/0FlTVP2VnlWS4f3-UE9hHXMB-Q-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Marmelad';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/marmelad/v18/Qw3eZQdSHj_jK2e-8tFL-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Oooh Baby';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/ooohbaby/v4/2sDcZGJWgJTT2Jf76xQDbw-1.ttf) format('truetype');
+}

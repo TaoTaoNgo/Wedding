@@ -1,0 +1,24 @@
+﻿@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 400;
+  src: url(s/dosis/v32/HhyJU5sn9vOmLxNkIwRSjTVNWLEJN7Ml2xMB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 600;
+  src: url(s/dosis/v32/HhyJU5sn9vOmLxNkIwRSjTVNWLEJ6bQl2xMB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Dosis';
+  font-style: normal;
+  font-weight: 700;
+  src: url(s/dosis/v32/HhyJU5sn9vOmLxNkIwRSjTVNWLEJ0LQl2xMB.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Great Vibes';
+  font-style: normal;
+  font-weight: 400;
+  src: url(s/greatvibes/v19/RWmMoKWR9v4ksMfaWd_JN9XFiaE-1.ttf) format('truetype');
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Sheets API</title>
+  <script src="https://apis.google.com/js/api.js"></script>
+  <script>
+    function authenticate() {
+      return gapi.auth2.getAuthInstance()
+          .signIn({scope: "https://www.googleapis.com/auth/spreadsheets"})
+          .then(function() { console.log("Sign-in successful"); },
+                function(err) { console.error("Error signing in", err); });
+    }
+    function loadClient() {
+      gapi.client.setApiKey("AIzaSyCMxVo4yvs6LVefzQXGJ5VhDAGFq7voD3w");
+      return gapi.client.load("https://sheets.googleapis.com/$discovery/rest?version=v4")
+          .then(function() { console.log("GAPI client loaded for API"); },
+                function(err) { console.error("Error loading GAPI client for API", err); });
+    }
+    function execute() {
+      return gapi.client.sheets.spreadsheets.values.append({
+        "spreadsheetId": "19aQ7RLgXCnSDXsBzVVGRbCgEro9V5ZMCkqiEmlOVXx0",
+        "range": "Câu trả lời biểu mẫu 1",
+        "valueInputOption": "USER_ENTERED",
+        "resource": {
+          "values": [
+            ["19/11/2024 14:42:28", "HaoVM","Không bao giờ gửi mật khẩu thông qua Google Biểu mẫu."]
+          ]
+        }
+      })
+          .then(function(response) {
+                  console.log("Response", response);
+                },  
+                function(err) { console.error("Execute error", err); });
+    }
+    gapi.load("client:auth2", function() {
+      gapi.auth2.init({client_id: "164552897998-7ua11gp6j5jo1vrtrhnc9tic4pd5uq3p.apps.googleusercontent.com"});
+    });
+  </script>
+</head>
+<body>
+    <form 
+    method="POST" 
+    action="https://script.google.com/macros/s/AKfycbz4V32ELndjzZQ9ICD-PqgxlGnsh-NMrdkGXDgMmJw04iA5NKxXyAf04nH8eRHnjpFQbg/exec"
+  >
+    <input name="Email" type="email" placeholder="Email" required>
+    <input name="Name" type="text" placeholder="Name" required>
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>
+<!-- const apiKey = 'AIzaSyCY0ev9OpO2aDlJxahXHou8XesY6k_EcLg';
+const spreadsheetId = '1OlKnnKFEcRGNB7_iv4tjE9PWhTvMkpgWIE7V7iH5kpU';
+const range = 'Sheet3'; // Thay thế bằng phạm vi bạn muốn lấy dữ liệu
+
+const url = `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}?key=${apiKey}`;
+
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    console.log('Dữ liệu từ Google Sheets:', data);
+  })
+  .catch(error => {
+    console.error('Lỗi khi lấy dữ liệu:', error);
+  }); -->
