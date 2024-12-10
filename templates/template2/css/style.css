@@ -1721,7 +1721,7 @@ a:focus {
 }
 
 .hero .wedding-announcement .couple-name-merried-text h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: "Fleur De Leah", cursive;
   font-size: 90px;
   font-size: 5rem;
   color: #fff;
@@ -1758,6 +1758,7 @@ a:focus {
 
 .hero .wedding-announcement .married-text h4 {
   font-size: 26px;
+  font-family: "Ubuntu";
   font-size: 1.44444rem;
   color: #fff;
   text-transform: uppercase;
@@ -1901,7 +1902,7 @@ a:focus {
 }
 
 .hero .wedding-announcement .save-the-date h4 {
-  font-family: "Great Vibes", cursive;
+  font-family: "Tangerine", cursive;
   font-size: 40px;
   font-size: 2.22222rem;
   color: #fff;
@@ -2059,7 +2060,7 @@ a:focus {
 }
 
 .site-footer h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: "Tangerine", cursive;
   font-size: 67px;
   font-size: 3.72222rem;
   color: #fff;
@@ -2210,6 +2211,15 @@ a:focus {
   top: 0;
 }
 
+.wedding-couple-section .details .details-inner .infor {
+  font-family: 'Courier New', Courier, monospace;
+}
+.section-title h2 {
+  font-family: 'Fleur De Leah';
+}
+.story-section .story-timeline .story-text h3 {
+  font-family: "Funnel Sans"
+}
 /*--------------------------------------------------------------
 #0.6	wedding-couple-section
 --------------------------------------------------------------*/
@@ -2296,7 +2306,7 @@ a:focus {
 }
 
 .wedding-couple-section .details .signature {
-  font-family: "Great Vibes", cursive;
+  font-family: "Sour Gummy", cursive;
   font-size: 28px;
   font-size: 1.55556rem;
   display: block;
@@ -2413,7 +2423,7 @@ a:focus {
 }
 
 .count-down-section h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: "Tangerine", cursive;
   font-size: 72px;
   font-size: 4rem;
   color: #fff;
@@ -2771,7 +2781,7 @@ a:focus {
 }
 
 .cta h2 {
-  font-family: "Great Vibes", cursive;
+  font-family: "Tangerine", cursive;
   font-size: 75px;
   font-size: 4.16667rem;
   color: #fff;
@@ -4078,7 +4088,8 @@ a:focus {
 .justify-content-center{display: flex;justify-content: center;flex-wrap: wrap;}
 .events-section .card-img-top{border-radius: 50%;}
 .footer-end-text{text-align: center;color: #fff;padding: 60px 0 0 0;position: relative;z-index: 2;margin: 30px 0;}
-.footer-end-text h2{font-family: "Great Vibes", cursive;font-size: 67px;font-size: 3.72222rem;color: #fff;text-transform: capitalize;letter-spacing: 5px;}
+.footer-end-text h2{font-family: "Tangerine", cursive;font-size: 67px;font-size: 3.72222rem;color: #fff;text-transform: capitalize;letter-spacing: 5px;}
+.footer-end-text span{font-family: 'Fleur De Leah', cursive;font-size: 67px;font-size: 3.72222rem;color: #fff;text-transform: capitalize;letter-spacing: 5px;}
 .wish-box{overflow-y: auto;height: 436px;background-color: rgb(255 255 255 / 60%);margin: 0.5rem 0;border: 5px solid #f23b43;color: #333;}
 .wish-box::-webkit-scrollbar {width: 8px;}
 .wish-box::-webkit-scrollbar-thumb {background-color: #999;-webkit-border-radius: 0;-moz-border-radius: 0;-o-border-radius: 0;-ms-border-radius: 0;border-radius: 0;}
