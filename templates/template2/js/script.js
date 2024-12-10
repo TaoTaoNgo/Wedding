@@ -11,6 +11,17 @@
         }
     });
 
+    document.querySelectorAll('.wishes-autocomplete-content #wishSuggestions .showContent').forEach(function (emoji) {
+        emoji.addEventListener('click', function () {
+            var chatInput = document.getElementById('chat-input');
+            chatInput.value += this.innerText;
+            document.getElementById('wishes-autocomplete-content').style.display = 'none';
+            console.log(this.innerText);
+            document.getElementById('hide-autocomplete-tooltip').style.display = 'none';
+            document.getElementById('show-autocomplete-tooltip').style.display = 'inline-block';
+        });
+    });
+
     document.querySelectorAll('.icon-popup .emoji').forEach(function (emoji) {
         emoji.addEventListener('click', function () {
             var chatInput = document.getElementById('chat-input');
@@ -18,7 +29,6 @@
             document.getElementById('icon-popup').style.display = 'none';
         });
     });
-
     // Close the popup when clicking outside
     document.addEventListener('click', function (event) {
         var popup = document.getElementById('icon-popup');
